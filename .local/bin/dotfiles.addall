@@ -35,7 +35,7 @@ dotfiles add .config/waybar
 dotfiles add .config/wezterm
 
 
-dotfiles add .local/bin/dotfiles.add
+dotfiles add .local/bin/dotfiles.addall
 dotfiles add .local/bin/dotfiles.setup
 
 
