@@ -96,7 +96,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # android
 export ANDROID_HOME=$HOME/dev/android/sdk
 export ANDROID_SDK_ROOT=$HOME/dev/android/sdk
-export STUDIO_JDK=/usr/lib/jvm/java-11-jdk/
+export STUDIO_JDK=/usr/lib/jvm/java-11-openjdk/
 export STUDIO_GRADLE_JDK=$JAVA_HOME
 
 
