@@ -14,11 +14,11 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-# set $term kitty
-set $term wezterm
+set $term kitty
+# set $term wezterm
 set $vscode code
 set $menu rofi -show combi
-set $browser google-chrome-stable
+set $browser google-chrome-stable --proxy-server="http://127.0.0.1:9981"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -27,7 +27,7 @@ hide_edge_borders both
 font pango:Source Code Pro 9
 
 title_align center
-default_border pixel 1
+default_border pixel 2
 
 #gaps inner 1
 
