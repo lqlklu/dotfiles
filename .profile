@@ -102,3 +102,7 @@ export QT_DEBUG_PLUGINS=1
 # export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/lqlklu/.local/share/JetBrains/Toolbox/scripts"

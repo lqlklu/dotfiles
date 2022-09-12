@@ -18,12 +18,16 @@ set $term kitty
 # set $term wezterm
 set $vscode code
 set $menu rofi -show combi
-set $browser google-chrome-stable --proxy-server="http://127.0.0.1:9981"
+#set $browser google-chrome-stable --proxy-server="127.0.0.1:9981"
+set $browser microsoft-edge-stable --proxy-server="127.0.0.1:9981"
+#set $browser google-chrome-stable
+set $toolbox ~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 
-hide_edge_borders both
+#hide_edge_borders both
 font pango:Source Code Pro 9
 
 title_align center
@@ -92,6 +96,7 @@ exec_always --no-startup-id nm-applet
     bindsym $mod+Return exec $term
     bindsym $mod+x exec $vscode
     bindsym $mod+c exec $browser
+    bindsym $mod+z exec $toolbox
 
     # Kill focused window
     bindsym $mod+Shift+c kill
@@ -245,25 +250,12 @@ bindsym $mod+r mode "resize"
 #     # The default just shows the current date and time.
 #     status_command     i3status
 #     #swaybar_command    waybar
-
-# ########### dracula ##########
-#     colors {
-#         background #282A36
-#         statusline #F8F8F2
-#         separator  #44475A
-
-#         focused_workspace  #44475A #44475A #F8F8F2
-#         active_workspace   #282A36 #44475A #F8F8F2
-#         inactive_workspace #282A36 #282A36 #BFBFBF
-#         urgent_workspace   #FF5555 #FF5555 #F8F8F2
-#         binding_mode       #FF5555 #FF5555 #F8F8F2
-#     }
-# ########### dracula ##########
 # }
+
 bar {
     swaybar_command waybar
 }
-#exec waybar
+
 
 #set $opacity 0.99
 #for_window [class=".*" con_id=__focused__]    opacity 1
@@ -275,13 +267,12 @@ bar {
 ########### dracula ##########
 #
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused          #a760ff #a760ff #F8F8F2 #a760ff   #a760ff
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
-
 ########### dracula ##########
 

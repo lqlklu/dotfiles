@@ -70,7 +70,9 @@
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
@@ -139,5 +141,13 @@
     "rust": "html"
   },
   "kotlin.debugAdapter.enabled": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "http.proxy": "http://127.0.0.1:9981",
+  "mesonbuild.configureOnOpen": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "settingsSync.ignoredExtensions": [
+    "sdras.vue-vscode-extensionpack"
+  ],
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.linkedEditing": true
 }
