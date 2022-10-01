@@ -76,8 +76,8 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 
 # electron
-export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
-export ELECTRON_CUSTOM_DIR="v{{ version }}"
+#export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
+#export ELECTRON_CUSTOM_DIR="v{{ version }}"
 
 
 # lua

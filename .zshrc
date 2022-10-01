@@ -20,7 +20,6 @@ plugins=(
   archlinux
   git-open
 )
-# export CITYSCAPES_ROOT="~/dev/ml/data/cityscapes"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -30,6 +29,7 @@ alias la="exa -lhbgSHa --time-style=long-iso --git --icons"
 alias c="clear"
 alias r="ranger"
 alias p="paru"
+alias v="nvim"
 
 alias .rb="systemctl reboot"
 alias .sd="systemctl poweroff"
@@ -120,13 +120,13 @@ export PATH="$HOME/.cargo/bin/:$PATH"
 
 
 # volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+#export VOLTA_HOME="$HOME/.volta"
+#export PATH="$VOLTA_HOME/bin:$PATH"
 
 
 # electron
-export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
-export ELECTRON_CUSTOM_DIR="v{{ version }}"
+#export ELECTRON_MIRROR="https://npm.taobao.org/mirrors/electron/"
+#export ELECTRON_CUSTOM_DIR="v{{ version }}"
 
 
 # lua
