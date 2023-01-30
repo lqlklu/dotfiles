@@ -149,5 +149,19 @@
     "sdras.vue-vscode-extensionpack"
   ],
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.linkedEditing": true
+  "editor.linkedEditing": true,
+  "terminal.external.windowsExec": "C:\\Windows\\System32\\powershell.exe",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.lineNumbers": "relative",
+  "java.import.gradle.java.home": "/usr/lib/jvm/java-11-jdk",
+  "vim.easymotion": true,
+  "idf.espIdfPath": "/home/lqlklu/dev/esp/esp-idf",
+  "idf.pythonBinPath": "/home/lqlklu/.espressif/python_env/idf5.1_py3.11_env/bin/python",
+  "idf.toolsPath": "/home/lqlklu/.espressif",
+  "idf.customExtraPaths": "/home/lqlklu/.espressif/tools/xtensa-esp-elf-gdb/12.1_20221002/xtensa-esp-elf-gdb/bin:/home/lqlklu/.espressif/tools/riscv32-esp-elf-gdb/12.1_20221002/riscv32-esp-elf-gdb/bin:/home/lqlklu/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin:/home/lqlklu/.espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin:/home/lqlklu/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin:/home/lqlklu/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin:/home/lqlklu/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/lqlklu/.espressif/tools/cmake/3.24.0/bin:/home/lqlklu/.espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/bin:/home/lqlklu/.espressif/tools/ninja/1.10.2:/home/lqlklu/.espressif/tools/esp-rom-elfs/20220823",
+  "idf.customExtraVars": "{\"OPENOCD_SCRIPTS\":\"/home/lqlklu/.espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/share/openocd/scripts\",\"ESP_ROM_ELF_DIR\":\"/home/lqlklu/.espressif/tools/esp-rom-elfs/20220823/\"}",
+  "idf.gitPath": "git",
+  "idf.gitPathWin": "D:\\Espressif\\tools\\idf-git\\2.30.1\\cmd\\git.exe",
+  "react-native-tools.showUserTips": false,
+  "workbench.experimental.settingsProfiles.enabled": true
 }
