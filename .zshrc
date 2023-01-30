@@ -23,6 +23,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(starship init zsh)"
 
 alias l="exa -lhbgSH --time-style=long-iso --git --icons"
 alias la="exa -lhbgSHa --time-style=long-iso --git --icons"
@@ -45,7 +46,7 @@ alias wttr="curl wttr.in/shuangliu"
 alias pandoc_pdf="pandoc --pdf-engine=xelatex -V 'mainfont=SimSun'"
 
 alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
-
+alias get_idf='. $HOME/dev/esp/esp-idf/export.sh'
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
@@ -179,3 +180,8 @@ proxyoff() {
   echo "HTTP Proxy off"
 }
 
+
+# pnpm
+export PNPM_HOME="/home/lqlklu/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
