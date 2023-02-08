@@ -35,7 +35,7 @@ alias -s bz2='tar -xjvf'
 alias wttr="curl wttr.in/shuangliu"
 alias pandoc_pdf="pandoc --pdf-engine=xelatex -V 'mainfont=SimSun'"
 
-alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+alias dotf="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 alias get_idf='. $HOME/dev/esp/esp-idf/export.sh'
 
 

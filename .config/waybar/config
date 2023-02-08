@@ -5,7 +5,7 @@
   "width": 1920, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "sway/window"],
+  "modules-left": ["wlr/workspaces", "sway/mode", "custom/media", "sway/window"],
   "modules-center": [],
   "modules-right": [
     //"mpd",
@@ -39,6 +39,11 @@
   //         "default": ""
   //     }
   // },
+  //"wlr/workspaces": {
+     //"format": "{icon}",
+     //"on-scroll-up": "hyprctl dispatch workspace e+1",
+     //"on-scroll-down": "hyprctl dispatch workspace e-1"
+  //},
   "keyboard-state": {
     "numlock": true,
     "capslock": true,

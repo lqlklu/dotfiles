@@ -25,7 +25,6 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vsicons.dontShowNewVersionMessage": true,
   "editor.tabSize": 2,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "settingsSync.ignoredSettings": ["-C_Cpp.clang_format_fallbackStyle", "-C_Cpp.clang_format_style"],
@@ -37,7 +36,6 @@
   "editor.formatOnType": false,
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
-  "workbench.iconTheme": "material-icon-theme",
   "tabnine.experimentalAutoImports": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -152,8 +150,8 @@
   "editor.linkedEditing": true,
   "terminal.external.windowsExec": "C:\\Windows\\System32\\powershell.exe",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "clangd.path": "c:\\Users\\lqlklu\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\15.0.3\\clangd_15.0.3\\bin\\clangd.exe",
   "editor.lineNumbers": "relative",
-  "java.import.gradle.java.home": "/usr/lib/jvm/java-11-jdk",
   "vim.easymotion": true,
   "idf.espIdfPath": "/home/lqlklu/dev/esp/esp-idf",
   "idf.pythonBinPath": "/home/lqlklu/.espressif/python_env/idf5.1_py3.11_env/bin/python",
@@ -163,5 +161,6 @@
   "idf.gitPath": "git",
   "idf.gitPathWin": "D:\\Espressif\\tools\\idf-git\\2.30.1\\cmd\\git.exe",
   "react-native-tools.showUserTips": false,
-  "workbench.experimental.settingsProfiles.enabled": true
+  "workbench.iconTheme": "material-icon-theme",
+  "vsicons.dontShowNewVersionMessage": true
 }
