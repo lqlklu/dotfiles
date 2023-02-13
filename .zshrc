@@ -10,6 +10,7 @@ plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "esc/conda-zsh-completion"
 plug "Aloxaf/fzf-tab"
+plug "Freed-Wu/fzf-tab-source"
 
 
 # starship
@@ -54,8 +55,10 @@ export EDITOR=/bin/nvim
 export TERMINFO=/usr/share/terminfo
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export CC=/usr/bin/clang
-export CXX=/usr/bin/clang++
+# export CC=/usr/bin/clang
+# export CXX=/usr/bin/clang++
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/dev/scripts/bin"

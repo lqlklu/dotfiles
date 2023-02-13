@@ -1,55 +1,50 @@
 {
-  "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 24, // Waybar height (to be removed for auto height)
-  "width": 1920, // Waybar width
-  "spacing": 4, // Gaps between modules (4px)
-  // Choose the order of the modules
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "width": 1920,
+  "spacing": 4,
   "modules-left": [
-    //"wlr/workspaces",
-    "sway/workspaces",
-    "sway/mode",
-    "custom/media",
-    "sway/window"
+    "wlr/workspaces",
+    "wlr/mode",
+    "wlr/window",
+    "custom/media"
   ],
   "modules-center": [],
   "modules-right": [
     //"mpd",
     "idle_inhibitor",
     "pulseaudio",
+    "backlight",
     "network",
     "cpu",
     "memory",
     "temperature",
-    "backlight",
-    // "keyboard-state",
-    "sway/language",
+    //"keyboard-state",
     "battery",
-    "battery#bat2",
     "clock",
     "tray"
   ],
-  // Modules configuration
   // "sway/workspaces": {
-  //     "disable-scroll": true,
-  //     "all-outputs": true,
-  //     "format": "{name}: {icon}",
-  //     "format-icons": {
-  //         "1": "",
-  //         "2": "",
-  //         "3": "",
-  //         "4": "",
-  //         "5": "",
-  //         "urgent": "",
-  //         "focused": "",
-  //         "default": ""
-  //     }
+  //   "disable-scroll": true,
+  //   "all-outputs": true,
+  //   "format": "{name}: {icon}",
+  //   "format-icons": {
+  //     "1": "",
+  //     "2": "",
+  //     "3": "",
+  //     "4": "",
+  //     "5": "",
+  //     "urgent": "",
+  //     "focused": "",
+  //     "default": ""
+  //   }
   // },
-  //"wlr/workspaces": {
-  //"format": "{icon}",
-  //"on-scroll-up": "hyprctl dispatch workspace e+1",
-  //"on-scroll-down": "hyprctl dispatch workspace e-1"
-  //},
+  // "wlr/workspaces": {
+  //   "format": "{icon}",
+  //   "on-scroll-up": "hyprctl dispatch workspace e+1",
+  //   "on-scroll-down": "hyprctl dispatch workspace e-1"
+  // },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
@@ -151,9 +146,6 @@
       ""
     ]
   },
-  "battery#bat2": {
-    "bat": "BAT2"
-  },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -184,7 +176,7 @@
         ""
       ]
     }
-    //    "on-click": "pavucontrol"
+    //  "on-click": "pavucontrol"
   },
   "custom/media": {
     "format": "{icon} {}",
