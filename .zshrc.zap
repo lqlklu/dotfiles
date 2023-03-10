@@ -1,30 +1,23 @@
-export ZSH="$HOME/.oh-my-zsh"
+# zap
+[ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+
+plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-syntax-highlighting"
+plug "zsh-users/zsh-history-substring-search"
+plug "zap-zsh/sudo"
+plug "zap-zsh/fzf"
+plug "zap-zsh/supercharge"
+plug "zap-zsh/zap-prompt"
+plug "esc/conda-zsh-completion"
+plug "Aloxaf/fzf-tab"
+plug "Freed-Wu/fzf-tab-source"
 
 
-ZSH_THEME="agnoster"
-
-
-plugins=(
-  git
-  bundler
-  sudo
-  pip
-  extract
-  z
-  wd
-  vi-mode
-  vscode
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  history-substring-search
-  archlinux
-  git-open
-)
-
-source $ZSH/oh-my-zsh.sh
-
+# starship
 eval "$(starship init zsh)"
 
+
+# alias command
 alias l="exa -lhbgSH --time-style=long-iso --git --icons"
 alias la="exa -lhbgSHa --time-style=long-iso --git --icons"
 alias c="clear"
@@ -43,8 +36,9 @@ alias -s bz2='tar -xjvf'
 alias wttr="curl wttr.in/shuangliu"
 alias pandoc_pdf="pandoc --pdf-engine=xelatex -V 'mainfont=SimSun'"
 
-alias dotfiles="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+alias dotf="git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 alias get_idf='. $HOME/dev/esp/esp-idf/export.sh'
+
 
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
@@ -57,15 +51,14 @@ export QT4_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
 
-
 export EDITOR=/bin/nvim
 export TERMINFO=/usr/share/terminfo
 export XDG_CONFIG_HOME="$HOME/.config"
 
-
-export CC=/usr/bin/clang
-export CXX=/usr/bin/clang++
-
+# export CC=/usr/bin/clang
+# export CXX=/usr/bin/clang++
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/dev/scripts/bin"
@@ -102,9 +95,13 @@ export STUDIO_GRADLE_JDK=$JAVA_HOME
 # flutter
 export PATH=$PATH:$HOME/dev/flutter/flutter/bin/cache/dart-sdk/bin
 export PATH=$PATH:$HOME/dev/flutter/flutter/bin
-export PUB_HOSTED_URL=https://mirrors.sjtug.sjtu.edu.cn/dart-pub
-export FLUTTER_STORAGE_BASE_URL=https://mirrors.sjtug.sjtu.edu.cn
-export CHROME_EXECUTABLE=google-chrome-stable
+#export PUB_HOSTED_URL=https://mirrors.sjtug.sjtu.edu.cn/dart-pub
+#export FLUTTER_STORAGE_BASE_URL=https://mirrors.sjtug.sjtu.edu.cn
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+#unset PUB_HOSTED_URL
+#unset FLUTTER_STORAGE_BASE_URL
+export CHROME_EXECUTABLE=chromium
 
 
 # rustup
@@ -121,6 +118,12 @@ export PATH="$HOME/.cargo/bin/:$PATH"
 # volta
 #export VOLTA_HOME="$HOME/.volta"
 #export PATH="$VOLTA_HOME/bin:$PATH"
+
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
 
 
 # electron
@@ -178,8 +181,3 @@ proxyoff() {
   echo "HTTP Proxy off"
 }
 
-
-# pnpm
-export PNPM_HOME="/home/lqlklu/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end

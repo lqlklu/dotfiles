@@ -83,11 +83,14 @@ input type:keyboard {
 
 
 ### Start up
-exec_always --no-startup-id fcitx5
+exec_always --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec_always --no-startup-id dunst
+exec_always --no-startup-id fcitx5 -d
 exec_always --no-startup-id variety
-exec_always --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet --indicator
 exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id waybar
+# exec_always --no-startup-id waybar
+exec_always --no-startup-id waybar -c ~/.config/sway/waybar/config -s ~/.config/sway/waybar/style.css
 
 
 ### Key bindings
@@ -254,9 +257,9 @@ bindsym $mod+r mode "resize"
 #     #swaybar_command    waybar
 # }
 
-bar {
+#bar {
 #     swaybar_command waybar
-}
+#}
 
 
 #set $opacity 0.99
